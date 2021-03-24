@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatorika</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <script  src="script.js" defer></script>
+</head>
+<body>
+    <div class="select">
+    <select name="vrsta" id="vrsta">
+        <option value="permutacija">Permutacije</option>
+        <option value="kombinacija">Kombinacije</option>
+        <option value="varijacija">Varijacije</option>
+    </select>
+    </div>
+    <div class="select">
+        <select name="vrsta" id="ponavljanje">
+            <option value="sa">Sa ponavljanjem</option>
+            <option value="bez">Bez ponavljanja</option>
+        </select>
+        </div>
+        <div class="brojevi">
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="N" name="n" id='n' required />
+                <label for="n" class="form__label">N</label>
+            </div>
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="K" name="K" id='k' required />
+                <label for="k" class="form__label">K</label>
+            </div>
+        </div>
+    </div>
+    <button  onclick="izracunaj()" class="corner-button">
+        <span>Izračunaj</span>
+    </button>
+    <p id="rezultat"></p>
+</body>
+</html>
